@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>文字排版-下集</title>
+	<style type="text/css">
+		@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet");
+
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+
+		body{
+			/*background-color: #000;*/
+		}
+
+		.wrap {
+			margin: 100px 0;
+		}
+
+
+		.container{
+			width: 1200px;
+			margin: auto;
+			text-align: center;
+
+		}
+
+		.container h1{
+			width: 100%;
+			box-sizing: border-box;
+			font-size: 90px;
+/*			border-top: 1px solid #aaa;
+			border-bottom: 1px solid #aaa;*/
+			margin-bottom: .5em;
+		}
+
+		.container h1:before, .container h1:after{
+			content: '';
+			display: block;
+			height: 1px;
+			width: 4em;
+			background-color: #aaa;
+			margin: auto;
+		}
+
+		.container .txt{
+			flex-shrink: 0;
+			box-sizing: border-box;
+		}
+
+		.container .txt p{
+			margin-bottom: 1em;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="container">
+			<h1>Lorem, ips um.</h1>
+			<div class="txt">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nostrum officia ab inventore magnam vel illum nihil sapiente, ducimus eum impedit perferendis quisquam explicabo alias debitis odio minima accusantium quo! Est sint, quae, rerum ex labore blanditiis veritatis quod asperiores!</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates debitis sapiente. Reprehenderit facere, ducimus, enim, minima at suscipit tempora in distinctio non sequi doloribus laborum. Autem rerum repudiandae, id qui vel enim tempore? Dolorem sit optio nesciunt doloribus beatae! Dignissimos assumenda accusamus maxime esse labore sunt, ducimus laboriosam tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consectetur, debitis praesentium nobis quibusdam assumenda at, atque fuga modi nihil odit error! Sunt, saepe doloremque.</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>交錯漂浮版</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		body {
+			padding: 100px 0;
+			background: linear-gradient(20deg,  #3d5493, #1aa2a0) fixed center center / 100% 100%;
+		}
+
+		.wrap{
+			width: 1200px;
+			margin: auto;
+		}
+
+		.item{
+			display: flex;
+			align-items: center;
+			margin-bottom: 70px;
+			/*background-color: #ccc;*/
+		}
+
+		.item h2{
+			font-weight: 900;
+			margin-bottom: 1em;
+		}
+
+		.item p{
+			font-weight: 300;
+		}
+
+		.item .pic{
+			width: 55%;
+			flex-shrink: 0;
+		}
+
+		.item .pic img{
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		.item .txt{
+			width: 55%;
+			flex-shrink: 0;
+			padding: 50px 30px;
+			box-sizing: border-box;
+			position: relative;
+			z-index: 1;
+		}
+
+		.item > :first-child{
+			margin-right: -10%;
+		}
+
+		.item:nth-child(1) .txt{
+			background-color: rgba(240,174,193,.7);
+		}
+		.item:nth-child(2) .txt{
+			background-color: rgba(42,253,208,.7);			
+		}
+		.item:nth-child(3) .txt{
+			background-color: rgba(254,201,121,.7);			
+		}
+		.item:nth-child(4) .txt{
+			background-color: rgba(149,219,214,.7);			
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<!-- item 1 -->
+		<div class="item">
+			<div class="pic">
+				<img src="https://picsum.photos/600/350?random=10" alt="">
+			</div>
+			<div class="txt">
+				<h2>網頁教學如此淺顯易懂，就是金魚都能懂的網頁設計入門啦</h2>
+				<p>今天要給各位的內容是，交錯漂浮版怎麼切? 關於交錯漂浮版其實是很多網站都會見到的一個區塊，使用範圍滿廣泛且沒有特定，原理其實只要利用負值的 CSS margin，就能簡單且輕鬆的達到這個效果囉。 </p>
+			</div>
+		</div>
+		<!-- item 2 -->
+		<div class="item">
+			<div class="txt">
+				<h2>網頁教學如此淺顯易懂，就是金魚都能懂的網頁設計入門啦</h2>
+				<p>今天要給各位的內容是，交錯漂浮版怎麼切? 關於交錯漂浮版其實是很多網站都會見到的一個區塊，使用範圍滿廣泛且沒有特定，原理其實只要利用負值的 CSS margin，就能簡單且輕鬆的達到這個效果囉。 </p>
+			</div>
+			<div class="pic">
+				<img src="https://picsum.photos/600/350?random=11" alt="">
+			</div>
+		</div>
+		<!-- item 3 -->
+		<div class="item">
+			<div class="pic">
+				<img src="https://picsum.photos/600/350?random=12" alt="">
+			</div>
+			<div class="txt">
+				<h2>網頁教學如此淺顯易懂，就是金魚都能懂的網頁設計入門啦</h2>
+				<p>今天要給各位的內容是，交錯漂浮版怎麼切? 關於交錯漂浮版其實是很多網站都會見到的一個區塊，使用範圍滿廣泛且沒有特定，原理其實只要利用負值的 CSS margin，就能簡單且輕鬆的達到這個效果囉。 </p>
+			</div>
+		</div>
+		<!-- item 4 -->
+		<div class="item">
+			<div class="txt">
+				<h2>網頁教學如此淺顯易懂，就是金魚都能懂的網頁設計入門啦</h2>
+				<p>今天要給各位的內容是，交錯漂浮版怎麼切? 關於交錯漂浮版其實是很多網站都會見到的一個區塊，使用範圍滿廣泛且沒有特定，原理其實只要利用負值的 CSS margin，就能簡單且輕鬆的達到這個效果囉。 </p>
+			</div>
+			<div class="pic">
+				<img src="https://picsum.photos/600/350?random=13" alt="">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

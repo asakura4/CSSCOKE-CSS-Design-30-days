@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>表格怎麼切</title>
+	<style type="text/css">
+
+		@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet");
+
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		html, body{
+			height: 100%;
+		}
+
+		body{
+			display: flex;
+			align-items: center;
+			background-image: linear-gradient(90deg, #3d5894, #08c7a5);
+		}
+
+		.table{
+			width: 800px;
+			margin: auto;
+		
+		}
+
+		.table table{
+			border: 3px double #666;
+			width: 100%;
+			background: #fff;
+			border-radius: 10px;
+
+		}
+
+		.table thead{
+			background: #333;
+			color: #fff;
+
+		}
+		.table thead th:first-child{
+			border-radius: 7px 0 0 0;
+		}
+
+		.table thead th:last-child{
+			border-radius: 0 7px 0 0;
+		}
+
+		
+		.table tbody tr:nth-child(even){
+			background-color: #ffa;
+		}
+		
+		.table tbody a{
+			color: #777;
+		}
+
+		.table tbody tr:hover{
+			background-color: #FEE;
+		}
+
+
+
+		.table tfoot td:first-child{
+			border-radius: 0 0 0 7px;
+		}
+
+		.table tfoot td:last-child{
+			border-radius: 0 0 7px 0;
+		}
+
+		.table tr{
+			
+		}
+
+		.table th{
+			border: 1px solid #666;
+			padding: 6px 10px;
+			font-family: 'Noto Sans TC', sans-serif;
+		}		
+
+		.table td{
+			border: 1px solid #666;
+			padding: 6px 10px;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+
+		.table caption{
+			caption-side: bottom;
+			text-align: right;
+			padding: 10px 0;
+			color: #ccc;
+		}
+
+		.table caption a{
+			color: #eee;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="table">
+		<table>
+			<caption>
+				Chiefs vs. Ravens Week 3 
+				<a href="https://www.youtube.com/watch?v=5wqkMk1DhAw">Highlights</a> | NFL 2020
+			</caption>
+			<thead>
+				<tr>
+					<th scope="col">表格怎麼切</th>
+					<th scope="col">切版練習</th>
+					<th scope="col">HTML練習</th>
+					<th scope="col">網頁練習</th>
+					<th scope="col">網頁切版</th>
+					<th scope="col">淺顯易懂</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>越來越有難度</td>
+					<td>不知不覺就寫完了</td>
+					<td>height:100%</td>
+					<td>height:100vh</td>
+					<td>一個會扣掉卷軸高度</td>
+					<td>一個不會</td>
+				</tr>
+				<tr>
+					<td>切版練習</td>
+					<td>切版練習</td>
+					<td>切版練習</td>
+					<td>切版練習</td>
+					<td>切版練習</td>
+					<td>切版練習</td>
+				</tr>
+				<tr>
+					<td>喝杯咖啡</td>
+					<td>喝杯咖啡</td>
+					<td>喝杯咖啡</td>
+					<td>切喝杯咖啡</td>
+					<td>切喝杯咖啡</td>
+					<td>切喝杯咖啡</td>
+				</tr>
+				<tr>
+					<td>切版練習</td>
+					<td>切版練習</td>
+					<td>切版練習</td>
+					<td>切版練習</td>
+					<td>切版練習</td>
+					<td>切版練習</td>
+				</tr>
+				<tr>
+					<td>觀看次數</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>觀看次數</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Notes</td>
+					<td colspan="5">CopyRight Here</td>
+				</tr>
+			</tfoot>
+		</table>		
+	</div>
+
+	
+</body>
+</html>

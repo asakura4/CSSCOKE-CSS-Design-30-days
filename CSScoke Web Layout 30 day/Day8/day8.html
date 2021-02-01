@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>導覽列</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/8dfcda0d00.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet");
+
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: 0;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+
+		.main-header{
+			background: linear-gradient(0deg, #fe70d8, #3713c1);
+		}
+
+		.main-header .container{
+			display: flex;
+			align-items: center;
+			padding: 20px;
+			max-width: 1200px;
+			margin: auto;
+		}
+
+		.main-header .logo{
+			width: 100px;
+		}
+
+		.main-header .logo img{
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		.main-header .main-nav{
+			margin: auto;
+			display: flex;
+		}
+
+		.main-header .main-nav a{
+			text-decoration: none;
+			color: #fff;
+			padding: 5px 1em;
+			position: relative;
+			transform: translateY(0px);
+			transition: .3s
+		}
+
+		.main-header .main-nav a:hover{
+			transform: translateY(-5px);
+		}
+
+		.main-header .main-nav a:after{
+			content: '';
+			position: absolute;
+			left: 50%;
+			right: 50%;
+			bottom: -5px;
+			height: 0px;
+			border-bottom: 1px solid #fff;
+			transition: .3s;
+		}
+
+		.main-header .main-nav a:hover:after{
+			left: 0;
+			right: 0;
+		}
+
+		.main-header .header-search{
+			display:  flex;
+		}
+
+		.main-header .header-search input,
+		.main-header .header-search button{
+			border: none;
+			background-color: #fff;
+			padding: 5px 10px;
+
+		}
+
+		.main-header .header-search input:focus,
+		.main-header .header-search button:focus{
+			outline: none;
+		}
+
+		.main-header .header-search button{
+			border-radius: 0 200px 200px 0;
+		}
+		.main-header .header-search input{
+			border-radius: 200px 0 0 200px;
+		}
+
+	</style>
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<a href="#" class="logo">
+				<img src="https://picsum.photos/100/100?random=11" alt="">
+			</a>
+			<nav class="main-nav">
+				<a href="#">金魚都能懂的網頁切版</a>
+				<a href="#">導覽列 NO007</a>
+				<a href="#">切版教學 | HTML教學</a>
+				<a href="#">網頁教學 | 網頁切版</a>
+			</nav>
+			<form action="" class="header-search">
+				<input type="search" name="" id="">
+				<button><i class="fas fa-search"></i></button>
+			</form>
+		</div>	
+	</header>
+
+
+
+</body>
+</html>

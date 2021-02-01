@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>方塊酥版面</title>
+	<script src="https://kit.fontawesome.com/8dfcda0d00.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap");
+
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+
+		body{
+			background-color: #000;
+		}
+
+		.wrap{
+			width: 906px;
+			margin: auto;
+			overflow: hidden;
+		}
+
+		.item{
+			float: left;
+			position: relative;
+		}
+
+		.item img{
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		.item:first-child{
+			width: 50%;
+		}
+
+		.item:first-child ~ .item{
+			width: 25%;
+		}
+
+		.item .txt {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 15px;
+			box-sizing: border-box;
+			text-align: center;
+			color: #fff;
+			background-color: rgba(0,0,0,.6);
+			display: flex;
+			opacity: 0;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			transform: scale(0);
+
+		}
+
+		.item:hover .txt{
+			display: flex;
+			opacity: 1;
+			transition: .5s;
+			transform: scale(1);
+		}
+
+		.item h3{
+			font-weight: 300;
+			margin-bottom: .4em;
+		}
+
+		.item p{
+			font-weight: 100;
+			line-height: 1.7;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="item">
+			<img src="https://picsum.photos/500/500?random=11">
+			<div class="txt">
+				<h3>HTML教學</h3>
+				<p>#切版教學 #金魚都能懂 #CSScoke
+				網頁教學如此淺顯易懂，就是金魚都能懂的網頁設計入門啦
+				方塊酥版面依舊算是目前常見的一種版面編排，而今天我要棄 Flex 改用 Float 來排版，來看看這樣的版面改用 Float 到底有多麼快速吧。
+				</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="https://picsum.photos/500/500?random=12">
+			<div class="txt">
+				<h3>#切版教學</h3>
+				<p>網頁教學如此淺顯易懂，就是金魚都能懂的網頁設計入門啦
+					方塊酥版面依舊算是目前常見的一種版面編排，而今天我要棄 Flex 改用 Float 來排版，來看看這樣</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="https://picsum.photos/500/500?random=13">
+			<div class="txt">
+				<h3>#切版教學</h3>
+				<p>網頁教學如此淺顯易懂，就是金魚都能懂的網頁設計入門啦
+					方塊酥版面依舊算是目前常見的一種版面編排，而今天我要棄 Flex 改用 Float 來排版，來看看這樣</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="https://picsum.photos/500/500?random=14">
+			<div class="txt">
+				<h3>#切版教學</h3>
+				<p>網頁教學如此淺顯易懂，就是金魚都能懂的網頁設計入門啦
+					方塊酥版面依舊算是目前常見的一種版面編排，而今天我要棄 Flex 改用 Float 來排版，來看看這樣</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="https://picsum.photos/500/500?random=15">
+			<div class="txt">
+				<h3>#切版教學</h3>
+				<p><網頁教學如此淺顯易懂，就是金魚都能懂的網頁設計入門啦
+					方塊酥版面依舊算是目前常見的一種版面編排，而今天我要棄 Flex 改用 Float 來排版，來看看這樣</p>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

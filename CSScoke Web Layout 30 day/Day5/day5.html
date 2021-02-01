@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>通用橫式版面</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.wrap{
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			background: linear-gradient(-30deg, #fdaecb, #e7597f, #fe8556)
+		}
+
+		.container{
+			width: 1200px;
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.item{
+			width: 368px;
+			margin: 15px;
+			display: flex;
+			background-color: rgba(255, 255, 255, .6);
+			border: 1px solid #888;
+			box-shadow: 0 10px 30px rgba(160,0,0,.5);
+			font-family: 'Noto Sans TC', sans-serif;
+
+		}
+
+		.item .pic{
+			width: 50%;
+		}
+
+		.item .pic img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.item .txt{
+			width: 50%;
+			padding: 20px;
+			box-sizing:  border-box;
+			display: flex;
+			flex-direction: column;
+			/*justify-content: center;*/
+		}
+
+		.item .txt h2{
+			font-weight: 500;
+			margin-bottom: .4em;
+		}
+
+		.item .txt p{
+			font-weight: 300;
+		}
+
+		.item .txt .btn{
+			line-height: 1.5em;
+			border: 1px solid #ccc;
+			padding: 0 1em;
+			align-self: flex-end;
+			text-decoration: none;
+			border-radius: 200px;
+			margin-top: auto;
+			color: #aaa;
+		}
+
+		.item .txt .btn:hover{
+			background-color: #ccc;
+			color: #fff;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="container">
+			<div class="item">
+				<div class="pic">
+					<img src="https://picsum.photos/400/400?random=11">
+				</div>
+				<div class="txt">
+					<h2>金魚都能懂的網頁切版</h2>
+					<p>使用範圍超廣泛且沒有特定主題限定，原理只需要理解 Flex 的基本原理就能簡單且輕鬆的達到這個效果囉.</p>
+					<a href="#" class="btn">more</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="https://picsum.photos/400/400?random=12">
+				</div>
+				<div class="txt">
+					<h2>金魚都能懂的網頁切版</h2>
+					<p>使用範圍超廣泛且沒有特定主題限定，原理只需要理解 Flex 的基本原理就能簡單且輕鬆的達到這個效果囉.</p>
+					<a href="#" class="btn">more</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="https://picsum.photos/400/400?random=13">
+				</div>
+				<div class="txt">
+					<h2>金魚都能懂的網頁切版</h2>
+					<p>使用範圍超廣泛且沒有特定主題限定，原理只需要理解 Flex 的基本原理就能簡單且輕鬆的達到這個效果囉.</p>
+					<a href="#" class="btn">more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

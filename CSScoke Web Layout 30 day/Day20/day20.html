@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/8dfcda0d00.js" crossorigin="anonymous"></script>
+	<title>時間軸</title>
+	<style type="text/css">
+		@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet");
+
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		body{
+			background-color: #edece1;
+		}
+
+		.wrap{
+			width: 960px;
+			margin: auto;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+
+		.timeline:after{
+			content: '';
+			display: block;
+			height: 0;
+			width: 100%;
+			clear: both;
+		}
+
+		.timeline{
+			padding: 100px 0 200px;
+		}
+
+		.timeline li{
+			width: 50%;
+			box-sizing: border-box;
+			padding: 20px 0;
+			position: relative;
+		}
+
+		.timeline li:nth-child(odd){
+			float: left;
+			padding-right: 100px;
+		}
+
+
+		.timeline li:nth-child(even){
+			float: right;
+			padding-left: 100px;
+			transform: translateY(50%);
+
+		}
+
+		.timeline li::after{
+			content: '';
+			position: absolute;
+			z-index: -1;
+			width: 1px;
+			top:0;
+			height: 100%;
+			background-color: #ccc;
+
+		}
+
+		.timeline li:nth-child(odd)::after{
+
+			right: 0;
+		}
+
+		.timeline li:nth-child(even)::after{
+
+			left: 0;
+		}
+
+		.timeline li:last-child::after{
+			height: 50%;
+		}
+
+
+
+		.timeline li:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: #aaa;
+			z-index: 2;
+
+		}
+
+		.timeline li:nth-child(odd)::before{
+			right: -10px;
+		}
+
+
+		.timeline li:nth-child(even)::before{
+			left: -10px;
+		}
+
+
+		.timeline a{
+			display: block;
+			text-decoration: none;
+			background-color: #fff;
+			border: 1px solid #aaa;
+			box-sizing: border-box;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 5px 3px #888;
+		}
+
+		.timeline a:hover{
+			background-color: #6fa5f6;
+		}
+
+		.timeline a:hover h2,
+		.timeline a:hover p{
+			color: #fff;
+		}
+
+		.timeline h2{
+			color: #333;
+			font-family: 'Noto Sans TC', sans-serif;
+			font-weight: 700;
+			border-bottom: 1px solid #888;
+			margin-bottom: 10px;
+		}
+
+		.timeline p{
+			color: #666;
+			font-family: 'Noto Sans TC', sans-serif;
+			font-weight: 100;
+		}
+
+		.timeline h2::after{
+			content: '';
+			position: absolute;
+			height: 1px;
+			width: 100px;
+			background-color: #aaa;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+
+		.timeline li:nth-child(odd) h2::after{
+			right: 0;
+		}
+		.timeline li:nth-child(even) h2::after{
+			left: 	0;
+		}
+
+		.clearcheck{
+			background-color: #fff;
+			border: 1px solid #aaa;
+			box-sizing: border-box;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 3px 3px 5px #888;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="wrap">
+		<h1>時間軸 NO019</h1>
+		<p>網頁教學如此淺顯易懂，就是金魚都能懂的網頁設計入門啦
+時間軸是很多企業網站中會看到的，通常出現在歷史沿革或者是大事記這一類的頁面中，今天就跟著 Amos 一起來切個時間軸吧。</p>
+		<ul class="timeline">
+			<li>
+				<a href="#">
+					<h2>Lorem</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae veritatis explicabo rem voluptatum aperiam qui laboriosam aspernatur iure enim aliquam.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<h2>Lorem</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Neque explicabo ducimus ex sequi ad, molestiae non cum dolorem earum fugit.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<h2>Lorem</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellat non dolorem consequatur, repudiandae, beatae labore! Vel possimus, neque rem.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<h2>Lorem</h2>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quibusdam minima at amet eum laboriosam inventore, veniam maxime tenetur obcaecati?</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<h2>non lorem</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Odit magnam doloremque sit error, est laborum facilis.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<h2>non loe</h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Quisquam voluptas ipsam nulla illum assumenda asperiores deleniti sequi soluta voluptatum eos.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<h2>non see</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Voluptas quas velit, dolores iste quibusdam molestiae quidem, error blanditiis accusantium nostrum.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<h2>see aa</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Tempora, corrupti deserunt, cum error rerum sed ipsam exercitationem aspernatur libero facere.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<h2>test here</h2>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam nesciunt ea labore architecto perferendis quasi quod amet nobis, esse repellat.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<h2>non title here</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex eos illum cupiditate necessitatibus, architecto.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<h2>also title</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ea sint aspernatur reiciendis consequatur.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<h2>this is title</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit amet possimus, ab eveniet porro assumenda sequi sit nam magnam provident aut enim, similique, vitae est voluptates earum numquam, itaque rerum!</p>
+				</a>
+			</li>
+		</ul>
+
+	    <div>
+           <h3 class="clearcheck">clear-check here</h3>
+        </div>
+	</div>
+</body>
+</html>

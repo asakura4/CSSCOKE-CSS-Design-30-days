@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>文字排版-中集</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+
+		.wrap{
+			margin: 100px 0;
+		}
+
+		.container {
+			position: relative;
+			width: 1200px;
+			margin: auto;
+		}
+
+		.container h1{
+			width: 400px;
+			font-size: 90px;
+			box-sizing: border-box;
+			padding: 15px;
+			float: right;
+			color: #aaa;
+			position: relative;
+
+		}
+
+		.container h1:before{
+			content: '';
+			display: block;
+			position: absolute;
+			z-index: -1;
+			width: 200px;
+			height: 200px;
+			border: 30px solid #eee;
+			bottom: 0;
+		}
+
+		.container .txt {
+			column-count: 2;
+			column-gap: 30px;
+		}
+
+		.container p{
+			line-height: 1.6;
+			margin-bottom: 1em;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="container">
+			<h1>Lorem, ipsum.</h1>
+			<div class="txt">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nostrum officia ab inventore magnam vel illum nihil sapiente, ducimus eum impedit perferendis quisquam explicabo alias debitis odio minima accusantium quo! Est sint, quae, rerum ex labore blanditiis veritatis quod asperiores!</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates debitis sapiente. Reprehenderit facere, ducimus, enim, minima at suscipit tempora in distinctio non sequi doloribus laborum. Autem rerum repudiandae, id qui vel enim tempore? Dolorem sit optio nesciunt doloribus beatae! Dignissimos assumenda accusamus maxime esse labore sunt, ducimus laboriosam tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consectetur, debitis praesentium nobis quibusdam assumenda at, atque fuga modi nihil odit error! Sunt, saepe doloremque.</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

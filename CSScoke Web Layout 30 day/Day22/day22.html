@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>不規則邊緣</title>
+	<style type="text/css">
+		@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap");
+
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.banner{
+			height: 600px;
+			background: url('https://picsum.photos/800/600?random=10') center top / cover;
+		}
+
+		.sec{
+			position: relative;
+		}
+		.sec .container{
+			width: 1200px;
+			margin: auto;
+			display: flex;
+			position: relative;
+			z-index: 2;
+		}
+
+		.sec .item{
+			width: 570px;
+			margin: 0 15px;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+		.sec .item h2{
+			margin-bottom: 1.2em;
+		}
+
+		.sec .item p{
+			line-height: 1.7;
+			margin-bottom: 1.6em;
+		}
+
+		.sec::after{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			top: 0;
+			left: 50%;
+			background-color: #fff;
+			transform: translateX(-30%) translateY(-50%);
+			border-radius: 50%;
+			box-shadow: 178px 0px 0px 30px #FFF,
+						327px 34px 0px 20px #FFF,
+						480px 9px 0 60px #FFF,
+						690px 0px 0px 89px #FFF,
+						880px 0px 0px 89px #FFF,
+
+						-178px 0px 0px 30px #FFF,
+						-327px 34px 0px 20px #FFF,
+						-480px 71px 0 60px #FFF,
+						-690px 0px 0px 89px #FFF,
+						-880px 0 0px 89px #FFF,
+						-1100px 50px 0 89px #fff,
+
+						178px -30px 0 56px rgba(0,0,10,.5),
+						298px 10px 0 56px rgba(0,0,10,.5),
+						540px -40px 0 50px rgba(0,0,10,.5),
+						740px -30px 0 30px rgba(0,0,10,.5),
+						880px -100px 0 30px rgba(0,0,10,.5),
+						1000px 0px 0 80px rgba(0,0,10,.5),
+
+							/*...*/
+					       -60px 0px 0 56px rgba(0,0,10,.5),
+					       -298px 10px 0 56px rgba(0,0,10,.5),
+					       -540px -40px 0 50px rgba(0,0,10,.5),
+					       -740px -30px 0 30px rgba(0,0,10,.5),
+					       -780px -70px 0 80px rgba(0,0,10,.5),
+					       -1200px 0px 0 80px rgba(0,0,10,.5);
+		}
+
+		.sec::before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 200px;
+			background-color: #fff;
+			z-index: 1;
+			top: 0;
+			left: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="banner"></div>
+	<div class="sec">
+		<div class="container">
+			<div class="item">
+				<h2>舊金山－奧克蘭海灣大橋半美元</h2>
+				<p>舊金山－奧克蘭海灣大橋半美元是美國鑄幣局1936年鑄造的50美分紀念幣，旨在慶祝舊金山-奧克蘭海灣大橋這年十一月建成通車。硬幣由雅克·施尼爾設計，正面刻有象徵加利福尼亞州的灰熊，背面是舊金山-奧克蘭海灣大橋，並有舊金山渡輪大廈為前景。</p>
+				<p>1936年美國發行的紀念幣種類繁多，遞交國會建議為海灣大橋落成發行紀念幣的法案就有兩份，一份專為海灣大橋，另一份還加入當時一同在建的金門大橋，最終前者順利通過，再經富蘭克林·德拉諾·羅斯福總統簽字成為法律正式生效。</p>
+			</div>
+			<div class="item">
+				<h2>英格蘭足球超級聯賽球場列表</h2>
+				<p>英格蘭足球超級聯賽是英格蘭最高級別的足球聯賽，自成立以來，已有59個足球場舉辦過英超比賽。第一球季英超比賽於1992年8月15日舉行，共有11家俱樂部參賽[1]。在1989年希爾斯堡慘劇後，泰萊報告建議在1994-95球季開始前取消露天看台，取而代之的則是全座位球場[2]。</p>
+				<p>然而，在2000-01球季富勒姆從英格蘭足球冠軍聯賽升級後，由於英足總允許俱樂部使用額外時間來完成球場翻修，露天看台暫時回歸英超[3]。</p>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

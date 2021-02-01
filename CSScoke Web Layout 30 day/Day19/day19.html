@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/8dfcda0d00.js" crossorigin="anonymous"></script>
+	<title>訊息對話紀錄</title>
+	<style type="text/css">
+		@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet");
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		html, body{
+			height: 100%;
+		}
+
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #d3effb;
+		}
+
+		.dialogue{
+
+			width: 500px;
+			padding: 20px;
+			box-shadow: 0 0 10px #3e92cc;
+			background-color: #f4f5f7;
+		}
+
+		.user{
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 20px;
+			font-family: 'Noto Sans TC', sans-serif;
+
+		}
+
+		.local {
+			justify-content: flex-end;
+		}
+		.user .avatar{
+			width: 60px;
+			text-align: center;
+			flex-shrink: 0;
+		}
+
+		.user .pic{
+			border-radius: 50%;
+			overflow: hidden;
+		}
+
+		.user .pic img{
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		.user .txt{
+			background-color: #aaa;
+			padding: 16px;
+			border-radius: 10px;
+			position: relative;
+		}
+
+		.remote .txt{
+			margin-left: 20px;
+			margin-right: 80px;
+			color: #a1b4c5;
+			background-color: #fff;
+		}
+
+		.local .txt{
+			margin-left: 80px;
+			margin-right: 20px;
+			order: -1;
+			background-color: #3e92cc;
+			color: #fff;
+		}
+
+		.remote .txt::before,
+		.local .txt::before{
+			content:'';
+			position: absolute;
+			top: 10px;
+			border-top: 20px solid transparent;
+			border-bottom: 20px solid transparent;
+		}
+
+
+		.remote .txt:before{
+			border-right: 20px solid #fff;
+			left: -10px;
+		}
+
+		.local .txt:before{
+			border-left: 20px solid #3e92cc;
+			right: -10px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="dialogue">
+		<div class="user remote">
+			<div class="avatar">
+				<div class="pic">
+					<img src="https://picsum.photos/300/300?random=10">
+				</div>
+				<div class="name">
+					Alexa
+				</div>
+			</div>
+			<div class="txt">
+				對話如有雷同，純屬巧合。
+			</div>
+		</div>
+		<div class="user local">
+			<div class="avatar">
+				<div class="pic">
+					<img src="https://picsum.photos/300/300?random=20">
+				</div>
+				<div class="name">
+					Azure	
+				</div>
+			</div>
+			<div class="txt">
+				架構是最難寫的部分。
+			</div>
+		</div>
+
+		<div class="user remote">
+			<div class="avatar">
+				<div class="pic">
+					<img src="https://picsum.photos/300/300?random=10">
+				</div>
+				<div class="name">
+					Alexa
+				</div>
+			</div>
+			<div class="txt">
+				列出重點希望各位可以好好的將影片回放複習喔。
+			</div>
+		</div>
+		<div class="user local">
+			<div class="avatar">
+				<div class="pic">
+					<img src="https://picsum.photos/300/300?random=20">
+				</div>
+				<div class="name">
+					Azure	
+				</div>
+			</div>
+			<div class="txt">
+				另外幾個重點問題中，給各位參考取用。
+			</div>
+		</div>
+
+		<div class="user remote">
+			<div class="avatar">
+				<div class="pic">
+					<img src="https://picsum.photos/300/300?random=10">
+				</div>
+				<div class="name">
+					Alexa
+				</div>
+			</div>
+			<div class="txt">
+				你被 125 了嗎 ?
+			</div>
+		</div>
+		<div class="user local">
+			<div class="avatar">
+				<div class="pic">
+					<img src="https://picsum.photos/300/300?random=20">
+				</div>
+				<div class="name">
+					Azure	
+				</div>
+			</div>
+			<div class="txt">
+				後端碼農程序猿，來寫on cloud是不是搞錯了什麼，俺想耕田呀
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
