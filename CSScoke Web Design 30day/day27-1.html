@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box-a{
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+			background-color: #aaa;
+		}
+		.box-b{
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+			background-color: #faa;			
+		}
+
+		.product-title{
+			background-color: #000;
+			color: #fff;
+			padding: 10px;
+			cursor: pointer;
+		}
+
+		.content{
+			display: none;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="box-a">box-a</div>
+	<div class="box-b">box-b</div>
+
+	<div class="product-title">Product Introduction</div>
+	<div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corporis itaque cum iure. Repellendus alias, tenetur quisquam, illo perspiciatis expedita maxime, facilis quia eum animi aut dignissimos explicabo quos veritatis.</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".box-a").dblclick(function(){
+			$(".box-b").toggle();
+		})
+
+		$(".product-title").click(function(){
+			$(".content").toggle();
+		})
+
+	})
+</script>
+</body>
+</html>
